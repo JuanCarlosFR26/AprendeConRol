@@ -1,0 +1,17 @@
+Usuarios (id_usuario PK, nombre_usuario, correo, contrasena)
+
+Razas (id_raza PK, nombre_raza, atributos_base, habilidades_especiales)
+
+Clases (id_clase PK, nombre_clase, habilidades, bonificaciones)
+
+Personajes (id_personaje PK, id_usuario FK, nombre_personaje, nivel, experiencia, id_raza FK, id_clase FK)
+
+Mazmorras (id_mazmorra PK, nombre_mazmorra, descripcion_mazmorra, nivel_mazmorra, lenguaje_programacion)
+
+Equipo (id_equipo PK, nombre_equipo, tipo_equipo, atributos)
+
+Partes_Equipo (id_parte PK, id_personaje FK, nombre_parte, tipo_parte, atributos)
+
+Logros (id_logro PK, id_usuario FK, nombre_logro, descripcion, fecha_obtencion)
+
+Registro_Actividades (id_actividad PK, id_usuario FK, tipo_actividad, detalle_actividad, fecha)
